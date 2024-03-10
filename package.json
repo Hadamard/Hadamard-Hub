@@ -14,7 +14,7 @@
     "url": "https://github.com/szimek/sharedrop.git"
   },
   "scripts": {
-    "build": "npm update && npx ember-cli build --environment=production",
+    "build": "yarn install && ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
     "develop": "yarn install --frozen-lockfile && nf --procfile=Procfile.dev start",
     "lint:hbs": "ember-template-lint .",
